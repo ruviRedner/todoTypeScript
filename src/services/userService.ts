@@ -31,9 +31,9 @@ export default class UserService{
            }
        }
     }
-    // public static  getAllUsers():User[]{
-    //     return users
-    // }
+    public static  getAllUsers():User[]{
+        return users
+    }
     public static  getUser(id:string):User|undefined{
         return users.find(u=> u.id === id)
     }

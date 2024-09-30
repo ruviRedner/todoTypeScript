@@ -25,21 +25,21 @@ export const handleProfileRequest =(
   }
   res.json(result)
 }
-// export const  hendleGetAllUsers = (req:Request,res:Response):void =>{
-//   try {
-//     const result = {
-//       err:false,
-//       data:UserService.getAllUsers(),
-//       status:200
-//     }
-//     res.json(result)
-//   } catch (error) {
-//     res.json({
-//         err:true,
-//         status:500
-//     })
+export const  hendleGetAllUsers = (req:Request,res:Response):void =>{
+  try {
+    const result = {
+      err:false,
+      data:UserService.getAllUsers(),
+      status:200
+    }
+    res.json(result)
+  } catch (error) {
+    res.json({
+        err:true,
+        status:500
+    })
 
     
-//   }
+  }
 
-// }
+}

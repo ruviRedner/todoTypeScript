@@ -8,6 +8,6 @@ router.post("/signup",handleSignupRequset)
 
 router.get("/profile",verifyUser, handleProfileRequest)
 
-// router.get("/",hendleGetAllUsers)
+router.get("/",hendleGetAllUsers)
 
 export default router
