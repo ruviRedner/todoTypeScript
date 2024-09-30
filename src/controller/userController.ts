@@ -1,10 +1,13 @@
 import { Router } from "express"
-import { handleSignupRequset } from "../routes/usersRoutes"
+import { handleProfileRequest, handleSignupRequset, hendleGetAllUsers } from "../routes/usersRoutes"
+import verifyUser from "../middelweras/verify"
 
 const router:Router = Router()
 
 router.post("/signup",handleSignupRequset)
 
-router.get("/profile",()=>{})
+router.get("/profile",verifyUser, handleProfileRequest)
+
+// router.get("/",hendleGetAllUsers)
 
 export default router

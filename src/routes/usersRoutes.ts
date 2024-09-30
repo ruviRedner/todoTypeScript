@@ -13,3 +13,33 @@ export const handleSignupRequset = async(
         console.log(err)  
       } 
 }
+export const handleProfileRequest =(
+  req:Request,
+  res:Response,
+)=>{
+  const result = {
+    err:false,
+    //@ts-ignore
+    data:UserService.getUser(req.user.id),
+    status:200
+  }
+  res.json(result)
+}
+// export const  hendleGetAllUsers = (req:Request,res:Response):void =>{
+//   try {
+//     const result = {
+//       err:false,
+//       data:UserService.getAllUsers(),
+//       status:200
+//     }
+//     res.json(result)
+//   } catch (error) {
+//     res.json({
+//         err:true,
+//         status:500
+//     })
+
+    
+//   }
+
+// }
