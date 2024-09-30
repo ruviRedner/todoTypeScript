@@ -14,7 +14,7 @@ export default class User{
         async hashPassword(_password:string):Promise<void>{
         this.password = await bcrypt.hash(_password,10)
     }
-    async comparePassword(_password:string):Promise<boolean>{
+        async comparePassword(_password:string):Promise<boolean>{
         return await bcrypt.compare(_password,this.password || "")
     }
 }
