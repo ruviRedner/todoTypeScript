@@ -3,7 +3,7 @@ import { handleSigninRequset } from "../routes/authRoutes";
 
 const router:Router = Router()
 
-router.post("/signin",handleSigninRequset)
+router.post("/signin",handleSigninRequset )
 
 router.delete("/signout",()=>{})
 
