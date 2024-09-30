@@ -1,9 +1,9 @@
 {
   "name": "todotypescript",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon dist/index.js"
   },
   "keywords": [],
   "author": "",
